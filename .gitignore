@@ -1,0 +1,34 @@
+# --- Data (do not commit raw PHI / claim files) ---
+data/raw/
+data/interim/
+data/processed/
+*.csv
+*.csv.gz
+*.parquet
+*.xlsx
+!**/sample_*.csv
+
+# --- Notebook artifacts ---
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Build / dist ---
+build/
+dist/
