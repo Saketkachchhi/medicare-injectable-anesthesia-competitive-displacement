@@ -75,7 +75,7 @@ The pipeline normalizes inputs, filters to the four-HCPCS market basket, and pro
 | Continuing writer | NPI active in both years of the period | Per assignment. |
 | Revenue / spend | `clm_line_cvrd_pd_amt` (Medicare-paid amount) | Cleanest available proxy for brand revenue; Medicare-only, not commercial book. |
 
-**Data-quality checks verified at runtime.** Row count assertion (`28,369` total), out-of-window record exclusion (17 rows in 2015), share columns sum to 100% per year within float tolerance, and date-format inconsistencies resolved during preparation. Upstream typos in territory labels (`Philedelphia`, `Pittsburg`) are intentionally preserved as-is so figures match the source data exactly.
+**Data-quality checks verified at runtime.** Row count assertion (`28,368` total), out-of-window record exclusion (17 rows in 2015), share columns sum to 100% per year within float tolerance, and date-format inconsistencies resolved during preparation. Upstream typos in territory labels (`Philedelphia`, `Pittsburg`) are intentionally preserved as-is so figures match the source data exactly.
 
 The final dataset spans **22 territories across 4 regions**, with **3,396 J1885 patients · 982 J2250 · 636 J2704 · 2,079 J3010**.
 
@@ -167,7 +167,8 @@ medicare-injectable-anesthesia-competitive-displacement/
 ├── notebooks/
 │   └── Healthcare_Analytics_End_Term_FINAL.ipynb      ← 70 cells (22 code · 48 markdown)
 ├── reports/
-│   └── Healthcare_Analytics_End_Term_FINAL.html       ← rendered nbconvert export
+│   ├── Healthcare_Analytics_End_Term_FINAL.html       ← rendered nbconvert export
+│   └── Healthcare_Analytics_End_Term_REPORT.pdf       ← full written project report
 ├── presentation/
 │   └── BIA810_Final_Presentation.pptx                 ← 36-slide panel deck
 └── scripts/
@@ -181,11 +182,11 @@ medicare-injectable-anesthesia-competitive-displacement/
 The notebook is self-contained. Clone the repo, install the lightweight dependencies, and run end-to-end.
 
 ```bash
-git clone https://github.com/<your-handle>/medicare-injectable-anesthesia-competitive-displacement.git
+git clone https://github.com/Saketkachchhi/medicare-injectable-anesthesia-competitive-displacement.git
 cd medicare-injectable-anesthesia-competitive-displacement
 python -m venv .venv && source .venv/bin/activate
 pip install pandas numpy matplotlib jupyterlab beautifulsoup4
-Jupyter Lab Notebooks/Healthcare_Analytics_End_Term_FINAL.ipynb
+jupyter lab notebooks/Healthcare_Analytics_End_Term_FINAL.ipynb
 ```
 
 **Rebuild the notebook from the HTML export.** The `scripts/html_to_ipynb.py` utility converts the rendered nbconvert HTML back into a clean executable `.ipynb` — useful for auditors who only received the read-only HTML deliverable:

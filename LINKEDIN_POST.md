@@ -1,6 +1,6 @@
 # LinkedIn Announcement (drop-in)
 
-Use either the short version (recommended for the feed) or the long one (for an in-feed article / "Featured" section). Replace `<GITHUB_URL>` with your actual repo URL after `git push`.
+Use either the short version (recommended for the feed) or the long one (for an in-feed article / "Featured" section). Replace `https://github.com/Saketkachchhi/medicare-injectable-anesthesia-competitive-displacement` with your actual repo URL after `git push`.
 
 ---
 
@@ -19,7 +19,7 @@ The repo includes the full Python notebook (cohort switcher matrices, HCP behavi
 
 Modeled sized prize: **+290 to +370 incremental J2250 claims/year**, recoverable inside a single fiscal year with zero net-new HCP acquisition spend.
 
-Repo: <GITHUB_URL>
+Repo: https://github.com/Saketkachchhi/medicare-injectable-anesthesia-competitive-displacement
 
 #PharmaAnalytics #HealthcareData #CommercialAnalytics #Python #DataScience #BIA810
 
@@ -49,6 +49,6 @@ The repo includes the full Python notebook, the panel deck, and a small `html_to
 
 Special thanks to my J-FIVE teammates — Aditya Patel, Aneesh Vishnu, Nikhil Sonawane, William Reccoppa — and to Prof. Sanjiv Koshal for the brief.
 
-Repo: <GITHUB_URL>
+Repo: https://github.com/Saketkachchhi/medicare-injectable-anesthesia-competitive-displacement
 
 #PharmaCommercialAnalytics #HealthcareAnalytics #DataScience #Python #BrandStrategy #Medicare #HCPSegmentation #BIA810
