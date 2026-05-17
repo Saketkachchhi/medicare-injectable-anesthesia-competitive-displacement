@@ -185,7 +185,7 @@ git clone https://github.com/<your-handle>/medicare-injectable-anesthesia-compet
 cd medicare-injectable-anesthesia-competitive-displacement
 python -m venv .venv && source .venv/bin/activate
 pip install pandas numpy matplotlib jupyterlab beautifulsoup4
-jupyter lab notebooks/Healthcare_Analytics_End_Term_FINAL.ipynb
+Jupyter Lab Notebooks/Healthcare_Analytics_End_Term_FINAL.ipynb
 ```
 
 **Rebuild the notebook from the HTML export.** The `scripts/html_to_ipynb.py` utility converts the rendered nbconvert HTML back into a clean executable `.ipynb` — useful for auditors who only received the read-only HTML deliverable:
@@ -206,11 +206,11 @@ The script preserves headings, GitHub-flavored tables, lists, fenced code, inlin
 
 **J-FIVE — Team Healthcare Commercial Analytics (Spring 2026)**
 
-- **Aditya Patel** — Project Lead
+- **Saket Kachchhi** — Project Lead
 - **Aneesh Vishnu** — Strategy Lead
 - **Nikhil Sonawane** — Execution Lead
 - **William Reccoppa** — Lead Analyst, Market Drivers
-- **Saket Kachchhi** — Market Research Lead
+- **Aditya Patel** — Market Research Lead
 
 **Course:** BIA-810 Healthcare Data & Analytics · **Faculty:** Prof. Sanjiv Koshal
 
